@@ -1,0 +1,86 @@
+@use 'fonts';
+@use 'variables' as var;
+
+*{
+    box-sizing: border-box;
+    font-family: var.$defFont;
+}
+
+body{
+    background-color: var.$defBackGround;
+    margin: 0;
+}
+
+.page-wrapper{
+
+    .intro{
+        padding: var.$defPadding;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        header{
+            text-align: center;
+
+            h1{
+                font-size: 300%;
+            }
+
+            h2{
+                font-style: italic;
+            }
+        }
+
+        div{
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+
+            p{
+                a{
+                    display: block;
+                    text-align: center;
+                    padding: var.$defPadding;
+                    text-decoration: none;
+                    border: 3px solid black;
+                    border-radius: 8px;
+                    width: 200px;
+                    background-color: var.$defBackGround;
+                    color: black;
+                }
+            }
+        }
+    }
+
+    .intro::before{
+        content: "";
+        background-image: url('https://s.4pda.to/WXHq4wq70Kz2rYE6QgAmMMyyUhqEY.jpg');
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: var.$backgroundImageOpacity;
+        z-index: -1;
+    }
+
+    .main{
+        padding: var.$defPadding;
+        height: 100%;
+
+        div{
+            padding-top: 30px;
+        }
+    }
+
+    .sidebar{
+        padding: var.$defPadding;
+        height: 100%;
+    }
+
+    
+}
+

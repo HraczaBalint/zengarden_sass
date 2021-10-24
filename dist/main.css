@@ -1,3 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
 
+body {
+  background-color: lightgray;
+  margin: 0;
+}
+
+.page-wrapper .intro {
+  padding: 24px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.page-wrapper .intro header {
+  text-align: center;
+}
+.page-wrapper .intro header h1 {
+  font-size: 300%;
+}
+.page-wrapper .intro header h2 {
+  font-style: italic;
+}
+.page-wrapper .intro div {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page-wrapper .intro div p a {
+  display: block;
+  text-align: center;
+  padding: 24px;
+  text-decoration: none;
+  border: 3px solid black;
+  border-radius: 8px;
+  width: 200px;
+  background-color: lightgray;
+  color: black;
+}
+.page-wrapper .intro::before {
+  content: "";
+  background-image: url("https://s.4pda.to/WXHq4wq70Kz2rYE6QgAmMMyyUhqEY.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.3;
+  z-index: -1;
+}
+.page-wrapper .main {
+  padding: 24px;
+  height: 100%;
+}
+.page-wrapper .main div {
+  padding-top: 30px;
+}
+.page-wrapper .sidebar {
+  padding: 24px;
+  height: 100%;
+}
 
 /*# sourceMappingURL=main.css.map */
