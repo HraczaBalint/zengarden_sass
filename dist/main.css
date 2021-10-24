@@ -10,7 +10,7 @@ body {
 }
 
 .page-wrapper .intro {
-  padding: 24px;
+  padding: 16px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -32,9 +32,8 @@ body {
   margin-right: auto;
 }
 .page-wrapper .intro div p a {
-  display: block;
   text-align: center;
-  padding: 24px;
+  padding: 16px;
   text-decoration: none;
   border: 3px solid black;
   border-radius: 8px;
@@ -55,14 +54,85 @@ body {
   z-index: -1;
 }
 .page-wrapper .main {
-  padding: 24px;
+  padding: 16px;
   height: 100%;
 }
 .page-wrapper .main div {
-  padding-top: 30px;
+  margin-top: 30px;
+  padding: 16px;
+  width: 50%;
+  height: 75vh;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  float: left;
+}
+.page-wrapper .main footer {
+  clear: left;
+}
+.page-wrapper .main .explanation {
+  position: relative;
+}
+.page-wrapper .main .explanation::before {
+  content: "";
+  background-image: url("https://scontent.fbud4-1.fna.fbcdn.net/v/t1.6435-9/201452379_768487510490625_7768279484226478314_n.png?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=d2zhvTtmFJYAX-C1_fL&tn=7Tfuy7uMKm1rRAUa&_nc_ht=scontent.fbud4-1.fna&oh=ab3fc910654089b97a7a2a7c9c31afb2&oe=619CC1A9");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.3;
+  z-index: -1;
+}
+.page-wrapper .main .participation {
+  position: relative;
+}
+.page-wrapper .main .participation::before {
+  content: "";
+  background-image: url("https://static.warthunder.com/upload/image/%21%202017%20NEWS/01%20January/Wiki/Ammunition_types_ab5b65fc4926e8b284a272918b3358d1.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.3;
+  z-index: -1;
+}
+.page-wrapper .main .benefits {
+  position: relative;
+}
+.page-wrapper .main .benefits::before {
+  content: "";
+  background-image: url("https://static.warthunder.com/upload/image/!%20new/header_920x300/Medals.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.3;
+  z-index: -1;
+}
+.page-wrapper .main .requirements {
+  position: relative;
+}
+.page-wrapper .main .requirements::before {
+  content: "";
+  background-image: url("https://static.warthunder.ru/upload/image/1000x700/maps_missions.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.3;
+  z-index: -1;
 }
 .page-wrapper .sidebar {
-  padding: 24px;
+  padding: 16px;
   height: 100%;
 }
 

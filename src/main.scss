@@ -40,7 +40,6 @@ body{
 
             p{
                 a{
-                    display: block;
                     text-align: center;
                     padding: var.$defPadding;
                     text-decoration: none;
@@ -72,7 +71,87 @@ body{
         height: 100%;
 
         div{
-            padding-top: 30px;
+            margin-top: 30px;
+            padding: var.$defPadding;
+            width: 50%;
+            height: 75vh;
+            border-top: 3px solid black;
+            border-bottom: 3px solid black;
+            display: flex;
+            flex-direction: column;
+            float: left;
+        }
+
+        footer{
+            clear: left;
+        }
+
+        .explanation{
+            position: relative;
+        }
+
+        .explanation::before{
+            content: "";
+            background-image: url('https://scontent.fbud4-1.fna.fbcdn.net/v/t1.6435-9/201452379_768487510490625_7768279484226478314_n.png?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=d2zhvTtmFJYAX-C1_fL&tn=7Tfuy7uMKm1rRAUa&_nc_ht=scontent.fbud4-1.fna&oh=ab3fc910654089b97a7a2a7c9c31afb2&oe=619CC1A9');
+            background-size: cover;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            opacity: var.$backgroundImageOpacity;
+            z-index: -1;
+        }
+
+        .participation{
+            position: relative;
+        }
+
+        .participation::before{
+            content: "";
+            background-image: url('https://static.warthunder.com/upload/image/%21%202017%20NEWS/01%20January/Wiki/Ammunition_types_ab5b65fc4926e8b284a272918b3358d1.jpg');
+            background-size: cover;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            opacity: var.$backgroundImageOpacity;
+            z-index: -1;
+        }
+
+        .benefits{
+            position: relative;
+        }
+
+        .benefits::before{
+            content: "";
+            background-image: url('https://static.warthunder.com/upload/image/!%20new/header_920x300/Medals.jpg');
+            background-size: cover;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            opacity: var.$backgroundImageOpacity;
+            z-index: -1;
+        }
+
+        .requirements{
+            position: relative;
+        }
+
+        .requirements::before{
+            content: "";
+            background-image: url('https://static.warthunder.ru/upload/image/1000x700/maps_missions.jpg');
+            background-size: cover;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            opacity: var.$backgroundImageOpacity;
+            z-index: -1;
         }
     }
 
