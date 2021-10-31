@@ -21,7 +21,7 @@ body{
         justify-content: center;
         align-items: center;
 
-        &:before{
+        &::before{
             content: "";
             background-image: url('https://s.4pda.to/WXHq4wq70Kz2rYE6QgAmMMyyUhqEY.jpg');
             background-size: cover;
@@ -73,7 +73,7 @@ body{
         height: 100%;
 
         div{
-            margin-top: 30px;
+            margin-top: var.$defMarginTop;
             padding: var.$defPadding;
             width: 50%;
             height: 75vh;
@@ -89,7 +89,7 @@ body{
         .explanation{
             position: relative;
 
-            &:before{
+            &::before{
             content: "";
             background-image: url('https://scontent.fbud4-1.fna.fbcdn.net/v/t1.6435-9/201452379_768487510490625_7768279484226478314_n.png?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=d2zhvTtmFJYAX-C1_fL&tn=7Tfuy7uMKm1rRAUa&_nc_ht=scontent.fbud4-1.fna&oh=ab3fc910654089b97a7a2a7c9c31afb2&oe=619CC1A9');
             background-size: cover;
@@ -102,7 +102,7 @@ body{
             z-index: -1;
             }
 
-            &:hover:before{
+            &:hover::before{
                 opacity: var.$hoverBackgroundImageOpacity;
                 border: var.$hoverBackgroundImageBorder;
             }
@@ -111,7 +111,7 @@ body{
         .participation{
             position: relative;
 
-            &:before{
+            &::before{
                 content: "";
                 background-image: url('https://static.warthunder.com/upload/image/%21%202017%20NEWS/01%20January/Wiki/Ammunition_types_ab5b65fc4926e8b284a272918b3358d1.jpg');
                 background-size: cover;
@@ -124,7 +124,7 @@ body{
                 z-index: -1;
             }
 
-            &:hover:before{
+            &:hover::before{
                 opacity: var.$hoverBackgroundImageOpacity;
                 border: var.$hoverBackgroundImageBorder;
             }
@@ -133,7 +133,7 @@ body{
         .benefits{
             position: relative;
 
-            &:before{
+            &::before{
                 content: "";
                 background-image: url('https://static.warthunder.com/upload/image/!%20new/header_920x300/Medals.jpg');
                 background-size: cover;
@@ -146,7 +146,7 @@ body{
                 z-index: -1;
             }
 
-            &:hover:before{
+            &:hover::before{
                 opacity: var.$hoverBackgroundImageOpacity;
                 border: var.$hoverBackgroundImageBorder;
             }
@@ -155,7 +155,7 @@ body{
         .requirements{
             position: relative;
 
-            &:before{
+            &::before{
                 content: "";
                 background-image: url('https://static.warthunder.ru/upload/image/1000x700/maps_missions.jpg');
                 background-size: cover;
@@ -168,13 +168,32 @@ body{
                 z-index: -1;
             }
 
-            &:hover:before{
+            &:hover::before{
                 opacity: var.$hoverBackgroundImageOpacity;
                 border: var.$hoverBackgroundImageBorder;
             }
         }
 
-        
+        footer{
+            padding-top: 100px;
+            text-align: center;
+            a{
+                border: 3px solid black;
+                padding: 40px;
+                margin: 0px 30px 0px 30px;
+                border-radius: 50%;
+                background-image: url('https://wallpapercave.com/wp/YByx9XK.jpg');
+                background-size: contain;
+                opacity: var.$defBackgroundImageOpacity;
+                color: white;
+    
+                &:hover{
+                    opacity: var.$hoverBackgroundImageOpacity;
+                    padding: 50px;
+                    margin: 0px 20px 0px 20px;
+                }
+            } 
+        }
     }
 
     .sidebar{
@@ -183,5 +202,7 @@ body{
     }
 
     
+    
+
 }
 
