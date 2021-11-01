@@ -177,6 +177,7 @@ body{
         footer{
             padding-top: 100px;
             text-align: center;
+
             a{
                 border: 3px solid black;
                 padding: 40px;
@@ -197,12 +198,52 @@ body{
     }
 
     .sidebar{
+        margin-top: var.$defMarginTop;
         padding: var.$defPadding;
         height: 100%;
+
+        .wrapper{
+
+            .design-selection{
+                height: 75vh;
+
+                h3{
+                    text-align: center;
+                }
+
+                nav{
+                    
+                    ul{
+                        text-align: center;
+                        color: white;
+                        li{
+                            background-image: url('http://www.textures4photoshop.com/tex/thumbs/free-wood-sign-PNG-thumb18.png');
+                            background-size: cover;
+                            height: 250px;
+                            width: 25%;
+                            list-style-type: var.$defListStlyeType;
+                            float: left;
+                            padding-top: 40px;
+                            
+                            a{
+                                display: block;
+                                text-align: center;
+                                color: white;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .design-archives{
+                display: none;
+            }
+
+            .zen-resources{
+                display: none;
+            }
+        }
     }
-
-    
-    
-
 }
 
