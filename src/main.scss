@@ -230,6 +230,10 @@ body{
                                 text-align: center;
                                 color: white;
                                 text-decoration: none;
+
+                                &:hover{
+                                    text-decoration: underline;
+                                }
                             }
                         }
                     }
